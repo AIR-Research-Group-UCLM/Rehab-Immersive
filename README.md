@@ -48,6 +48,7 @@ If no user identifier is specified, the default user will be created or loaded.
 The files generated during execution are stored in the working directory. If the application is run directly on the headset, we can find it within the shared internal storage of the Oculus Quest 2, in the subdirectory: "\Android\data\com.RehabImmersive.boxAndBlock\BoxAndBlock".
 Starting from this directory, the following file structure is generated:
 		
+```text
 UserID_1/
 
 ├── TrackingData/
@@ -61,7 +62,7 @@ UserID_1/
 └── Historical.csv
 
 ## Repository
-
+```text
 root/
 ├── apk/
 │	├── VR_BoxAndBlock.part1
