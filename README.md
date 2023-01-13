@@ -4,6 +4,18 @@ Framework for the development of virtual reality clinical applications as a comp
 A preconfiguration allows customization for each patient's specific needs. 
 The framework also stores kinematics data, providing clinical staff with a valuable tool to evaluate progress and patient exercise performance. This repository contains an example of the proposed immersive virtual reality framework for upper limb rehabilitation, including a VR Box & Block test apk that utilizes the framework.
 
+## Table of contents
+
+- [Prerequisites](#Prerequisites)
+- [Build apk](build-apk)
+- [Installation](#installation)
+- [Execution](#execution)
+- [Files generated during execution](#Files-generated-during-execution)
+- [Repository](#repository)
+- [Contributing](#contributing)
+- [Creators](#creators)
+- [Copyright and license](#copyright-and-license)
+
 ## Prerequisites 📋
 
 1. To build the Unity package containing the scenes included in the .apk, Unity 2021.3.12f, Oculus Integration Pack v46.0 are required.
@@ -46,36 +58,32 @@ If no user identifier is specified, the default user will be created or loaded.
 
 The files generated during execution are stored in the working directory. If the application is run directly on the headset, we can find it within the shared internal storage of the Oculus Quest 2, in the subdirectory: "\Android\data\com.RehabImmersive.boxAndBlock\BoxAndBlock".
 Starting from this directory, the following file structure is generated:
-UserID_1
-└── TrackingData
-    │   ├── OculusTracking_1
-    │   └── ...
-    └── config.json
-    └── Historical.csv
-UserID_2
-...
-UserID_N
+
+UserID_1/
+├── TrackingData/
+│   ├── OculusTracking_1
+│	├── OculusTracking_n
+├── config.json
+└──  Historical.csv
 
 ## Repository
 
-root
-└── apk
-     ├── VR_BoxAndBlock.part1
-	 ├── VR_BoxAndBlock.part2
- └── appData
-     ├── com.RehabImmersive.boxAndBlock
-	            └──BoxAndBlock
-				 └──user13
-				      └──TrackingData
-						    └──OculusTracking_20230113_103711
-						    └──OculusTracking_20230113_103823
-					  └──config.json
-					  └──Historical.csv
-└──src 
-	└── UnityPackage
-				├──RehabImmersivePack.part1
-				└──RehabImmersivePack.part2
-		
+root/
+├── apk/
+│   ├── VR_BoxAndBlock.part1
+│	└── VR_BoxAndBlock.part2  
+├── appDatappData/
+│       ├── com.RehabImmersive.boxAndBlock/
+│			└── BoxAndBlock/
+│				└── user13/
+│					├── TrackingData
+│					│	└──OculusTracking_20230113_103711
+│					├── config.json
+│					└──Historical.csv
+└── src/
+	├── UnityPackage/
+	│	├──RehabImmersivePack.part1
+	│	└──RehabImmersivePack.part2
 	├── BadWall.cs
 	├── Block.cs
 	├── BlockCalibration.cs
@@ -93,8 +101,7 @@ root
 	├── RehabConstants.cs
 	├── StartGame.cs
 	├── TrackingData.cs
-	├── TrackingDataWritter.cs
-	
+	└── TrackingDataWritter.cs
 
 ## Contributors
 
