@@ -64,7 +64,7 @@ root/
 ├── apk/
 │	├── VR_BoxAndBlock.part1
 │	└── VR_BoxAndBlock.part2  
-├── appDatappData/
+├── appData/
 │	└── com.RehabImmersive.boxAndBlock/
 │		└── BoxAndBlock/
 │				└── user13/
@@ -72,6 +72,8 @@ root/
 │					│	└──OculusTracking_20230113_103711
 │					├── config.json
 │					└──Historical.csv
+├── doc/
+	└──DeveloperDocumentation
 └── src/
 	├── UnityPackage/
 	│	├──RehabImmersivePack.part1
