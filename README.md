@@ -49,6 +49,7 @@ The files generated during execution are stored in the working directory. If the
 Starting from this directory, the following file structure is generated:
 		
 UserID_1/
+
 ├── TrackingData/
 
 │	├── OculusTracking_1
