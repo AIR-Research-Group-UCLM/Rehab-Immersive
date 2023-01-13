@@ -9,12 +9,16 @@ The framework also stores kinematics data, providing clinical staff with a valua
 1. To build the Unity package containing the scenes included in the .apk, Unity 2021.3.12f, Oculus Integration Pack v46.0 are required.
 2. To run the application, the Oculus Quest 2 Meta, a data cable (or air link) to pass the information to the HMD and Meta Quest Developer Hub (or similar) are needed.
 
+## Build apk
+
+
+https://developer.oculus.com/documentation/unity/unity-conf-settings/
 ### Instalation 🔧
 
 The installation of the application into the Headset can be done in two ways:
 
 1. Building and running the Unity project with the Oculus Quest 2 connected to the computer.
-2. Directly passing the apk (referenced here) to the Oculus Quest 2. Different programs can be used, in our case we recommend using Meta Quest Developer Hub.
+2. Due to the size of the application exceeding the limit allowed by GitHub, it is divided into two .rar files. Once the contents are extracted, the VR_BoxAndBlock apk will be obtained, which can be transferred to Oculus Quest 2. Different programs can be used, in our case we recommend using Meta Quest Developer Hub.
 
 ## Execution ⚙️
 
@@ -40,5 +44,49 @@ UserID_1/
 UserID_2/
 ...
 UserID_N/
+
+## Repository
+
+/
+└── apk/
+     ├── VR_BoxAndBlock.part1
+	 ├── VR_BoxAndBlock.part2
+ └── appData/
+     ├── com.RehabImmersive.boxAndBlock
+	            └──BoxAndBlock
+				 └──user13
+				      └──TrackingData/
+						    └──OculusTracking_20230113_103711
+						    └──OculusTracking_20230113_103823
+					  └──config.json
+					  └──Historical.csv
+└──src 
+	└── UnityPackage
+				├──RehabImmersivePack.part1
+				└──RehabImmersivePack.part2
+		
+	├── BadWall.cs
+	├── Block.cs
+	├── BlockCalibration.cs
+	├── BlockUpdater.cs
+	├── GameConfiguration.cs
+	├── GeneratorCubes.cs
+	├── GoalBox.cs
+	├── GoodWall.cs
+	├── Historical.cs
+	├── HistoricalWritter.cs
+	├── InitBox.cs
+	├── LoadConfiguration.cs
+	├── MainMenu.cs
+	├── OutsideBox.cs 
+	├── RehabConstants.cs
+	├── StartGame.cs
+	├── TrackingData.cs
+	├── TrackingDataWritter.cs
+	
+
+
+					  
+				
 
 
