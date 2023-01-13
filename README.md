@@ -50,9 +50,13 @@ Starting from this directory, the following file structure is generated:
 		
 UserID_1/
 ├── TrackingData/
+
 │	├── OculusTracking_1
+
 │	└── OculusTracking_n
+
 ├── config.json
+
 └── Historical.csv
 
 ## Repository
