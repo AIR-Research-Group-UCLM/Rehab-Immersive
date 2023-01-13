@@ -1,6 +1,6 @@
 Within src/, there are C# classes used in the VR Box And Block application. Some of them are specifically associated with this particular application, while others are more generic and can be adapted to different virtual reality rehabilitation applications. Within the first group are the following:
 
-##Application classes
+## Application classes
 - BadWall.cs: detects if the passage from one compartment to another in the box has been done incorrectly in the difficult level, that is, by passing through the separator that is in the center of the wooden box.
 - GoalBox: detects if the cube has come into contact with the target compartment.
 - BlockUpdater: singleton used to update the number of blocks moved correctly, incorrectly, and the total number of blocks generated.
@@ -27,7 +27,7 @@ Historical is a class that is used to store information about a completed game s
 ### HistoricalWritter.cs
 HistoricalWritter is a class that is used to write historical data to a CSV file. 
 
-###GameConfiguration.cs
+### GameConfiguration.cs
 GameConfiguration is a class that contains variables that store the configuration settings for a game. It includes variables for the user's hand preference, the timer for the game, the level of the game, whether or not the autogrip feature is enabled, the user's identification, the position of the box in the game, whether the level is easy (without walls) and the default values for all the variables when the class is instantiated. 
 
 This class is used within a ScriptableObject created in Unity (DataSOGameConfiguration). In addition to the class it contains two other variables (block identifier that is grabbed and user path) that are relevant throughout the execution and that, thanks to this type of elements, remain in memory throughout all scenes.
