@@ -1,4 +1,4 @@
-Within src/, there are C# classes used in the VR Box And Block application. Some of them are specifically associated with this particular application, while others are more generic and can be adapted to different virtual reality rehabilitation applications. Within the first group are the following:
+Within src/, there are C# classes used in the VR Box And Block application. Some of them are specifically associated with this particular application, while others are more generic and can be adapted to different virtual reality rehabilitation applications. 
 
 ## Application classes
 - BadWall.cs: detects if the passage from one compartment to another in the box has been done incorrectly in the difficult level, that is, by passing through the separator that is in the center of the wooden box.
