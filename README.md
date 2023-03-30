@@ -9,6 +9,19 @@ The framework also stores kinematics data, providing clinical staff with a valua
 1. To build the Unity package containing the scenes included in the .apk, Unity 2021.3.12f, Oculus Integration Pack v46.0 are required.
 2. To run the application, the Oculus Quest 2 Meta, a data cable (or air link) to pass the information to the HMD and Meta Quest Developer Hub (or similar) are needed.
 
+## Dependencies 
+To build and run an Oculus Quest application in Unity, it is necessary to use the Android platform, as the application will be built into an APK file. To set up a Unity project to support Android, you need to install the following:
+- Android Build Support module.
+- Android Software Development Kit (SDK).
+- Native Development Kit (NDK).
+- Java Development Kit.
+
+For more information, please visit the website https://docs.unity3d.com/Manual/android-sdksetup.html. 
+
+Alos, two main dependencies are needed to develop a Unity project using the RehabImmersive framework: Oculus Integration and Movement SDK. 
+The Oculus Integration is a bundle of software tools that enhances graphics, supports social and platform integration, provides audio capabilities, and enables the creation of avatars for virtual reality experiences using Oculus devices or other devices that support the Open VR platform. The package also includes Interaction SDK, which offers a collection of components for adding hand interactions and controllers. It can be downloaded directly from the Unity Asset Store.
+The Movement SDK for Unity utilizes body tracking, face tracking, and eye tracking. In the case of RehabImmersive, it is used to calculate the degree of wrist flexion/abduction based on body tracking performed through inverse kinematics. This SDK can be downloaded from the [GitHub repository] (https://github.com/oculus-samples/Unity-Movement.git).
+
 ## Build apk
 In the src\UnityPackage folder, there are two files with the .rar extension that contain the Unity package with the scenes used in the application. This package can serve as a starting point for new applications, as it contains the classes that make up the framework. To use it, it is necessary to first extract it. After the decompression, the RehabImmersivePack package can be imported into a Unity project. 
 Steps to follow:
