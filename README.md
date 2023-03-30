@@ -18,7 +18,7 @@ To build and run an Oculus Quest application in Unity, it is necessary to use th
 
 For more information, please visit the website https://docs.unity3d.com/Manual/android-sdksetup.html. 
 
-Alos, two main dependencies are needed to develop a Unity project using the RehabImmersive framework: Oculus Integration and Movement SDK. 
+Also, two main dependencies are needed to develop a Unity project using the RehabImmersive framework: Oculus Integration and Movement SDK. 
 The Oculus Integration is a bundle of software tools that enhances graphics, supports social and platform integration, provides audio capabilities, and enables the creation of avatars for virtual reality experiences using Oculus devices or other devices that support the Open VR platform. The package also includes Interaction SDK, which offers a collection of components for adding hand interactions and controllers. It can be downloaded directly from the Unity Asset Store.
 The Movement SDK for Unity utilizes body tracking, face tracking, and eye tracking. In the case of RehabImmersive, it is used to calculate the degree of wrist flexion/abduction based on body tracking performed through inverse kinematics. This SDK can be downloaded from the [GitHub repository] (https://github.com/oculus-samples/Unity-Movement.git).
 
