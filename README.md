@@ -81,7 +81,8 @@ root/
 │					├── config.json
 │					└──Historical.csv
 ├── doc/
-	└──DeveloperDocumentation
+│	├── DeveloperDocumentation
+│	└── Architecture 
 └── src/
 	├── UnityPackage/
 	│	├──RehabImmersivePack.part1
