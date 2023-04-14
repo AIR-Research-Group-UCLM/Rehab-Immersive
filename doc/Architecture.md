@@ -1,7 +1,7 @@
 
 
 ## Description
-Figure next figure illustrates a multilayer architecture in which the upper layer would house new applications for upper limb rehabilitation. These applications, especially developed with Unity 3D and C# for Oculus Quest II, would be supported by the proposed framework, occupying the layers immediately below.
+Next figure illustrates a multilayer architecture in which the upper layer would house new applications for upper limb rehabilitation. These applications, especially developed with Unity 3D and C# for Oculus Quest II, would be supported by the proposed framework, occupying the layers immediately below.
 The layered set provides basic functionality to any hand rehabilitation software, and the construction of modular and scalable systems. Our proposal consists of three main layers: i) configuration and calibration, ii) hand interaction and iii) data persistence.
 
 <img
@@ -27,7 +27,10 @@ In virtual rehabilitation, it is crucial to consider the unique needs of each pa
 ### Hand interaction layer
 The middle layer of the system comprises three interconnected modules:
 a) hand tracking, b) hand interaction control, and c) audiovisual feedback to enhance immersion.
-The hand tracking feature is provided by Meta Quest Oculus software development kit (SDK). Our framework supported by this SDK offers three types of hand interaction: grasp, push, and ray casting. Grasp allows the user to pick up, hold, and release objects within the virtual environment. Push enables the user to press or activate certain elements in the virtual space, while ray casting allows the user to trace a virtual ray from the center of the hand to a specific object in the scene, that is intended to be interacted with. The system is capable of detecting a wide range of functional grasps, including both power and precision grasps (see netx figure). In addition to these commonly used grips, the system also supports the so-called tenodesis function, which is utilized by patients with spinal cord injuries (SCIs) who have limited finger function. One notable feature of these grasping and pinching capabilities is that they have been modified to account for the volume of virtual objects. The degree of grasping or pinching is adjusted to mimic the natural grip on the virtual object, so it is not necessary to physically touch the elements of the hand (e.g. fingers and palm) but rather the volume of the object is taken into consideration. This means that a grasp occurs when the distance between the elements of the hand approximately matches the volume of the virtual object. 
+
+The hand tracking feature is provided by Meta Quest Oculus software development kit (SDK). Our framework supported by this SDK offers three types of hand interaction: grasp, push, and ray casting. Grasp allows the user to pick up, hold, and release objects within the virtual environment. 
+Push enables the user to press or activate certain elements in the virtual space, while ray casting allows the user to trace a virtual ray from the center of the hand to a specific object in the scene, that is intended to be interacted with. The system is capable of detecting a wide range of functional grasps, including both power and precision grasps (see netx figure). In addition to these commonly used grips, the system also supports the so-called tenodesis function, which is utilized by patients with spinal cord injuries (SCIs) who have limited finger function. 
+One notable feature of these grasping and pinching capabilities is that they have been modified to account for the volume of virtual objects. The degree of grasping or pinching is adjusted to mimic the natural grip on the virtual object, so it is not necessary to physically touch the elements of the hand (e.g. fingers and palm) but rather the volume of the object is taken into consideration. This means that a grasp occurs when the distance between the elements of the hand approximately matches the volume of the virtual object. 
 
 
 <img
